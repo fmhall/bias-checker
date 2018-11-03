@@ -1,0 +1,23 @@
+p {
+    color: red;
+}
+
+.window {
+    width: 400px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.horizontal_box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.divider {
+    background-color: gray;
+    width: 390px;
+    align-content: center;
+    height: 2px;
+}
