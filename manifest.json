@@ -1,15 +1,13 @@
 {
     "name": "Bias-Checker",
+    "manifest_version": 2,
     "version": "1.0",
     "description": "Checks an article for political bias",
     "icons": {
 
     },
-    "background": {
-        "persistent": false,
-        "scripts": []
-    },
     "permissions": [],
     "browser_action": {
+        "default_popup": "popup.html"
     }
 }
