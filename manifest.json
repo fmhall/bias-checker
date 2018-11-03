@@ -9,8 +9,8 @@
 
     "permissions": [
         "identity",
-        "https://www.nytimes.com/*",
-        "https://www.google.com/_/chrome/*",
+        "https://www.nytimes.com/",
+        "https://www.google.com/",
         "tabs",
         "storage"
     ],
@@ -26,8 +26,8 @@
         }
       ],
 
-    "page_action": {
+    "browser_action": {
         "default_popup": "popup.html"
     },
-    "content_security_policy": "script-src 'self' https://www.gstatic.com/* https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;"
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;"
 }
