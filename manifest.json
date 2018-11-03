@@ -6,8 +6,28 @@
     "icons": {
 
     },
-    "permissions": [],
-    "browser_action": {
+
+    "permissions": [
+        "identity",
+        "https://www.nytimes.com/",
+        "https://www.google.com/_/chrome/newtab*",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["https://www.nytimes.com/*"],
+          "js": ["log.js"]
+        }
+      ],
+
+    "page_action": {
         "default_popup": "popup.html"
-    }
+    },
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;"
 }
