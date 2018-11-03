@@ -6,8 +6,29 @@
                 * TODO(DEVELOPER): Make sure you are importing the latest version of the Firebase JS. *
                 *************************************************************************************** -->
         <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-        <script src="popup.js"></script>
+        <link rel="stylesheet" type="text/css" href="popup.css">
     </head>
-    <p> THis is to test the popup file</p>
-    <body></body>
+    <body>
+        <div class="window">
+            <h1> Welcome to Bias Checker</h1>
+            <div class="horizontal_box">
+                <h1> Source Rating:</h1>
+                <h1> 6 </h1>
+            </div>
+            <p>According to our algorithm, this is a biased source.</p>
+            <div class="horizontal_box">
+                <h1> Our Algorithm's Calculation:</h1>
+                <h1> 6 </h1>
+            </div>
+            <p>According to our algorithm, this is a biased article.</p>
+            <div class="horizontal_box">
+                <h1> Your Peers' Rating: </h1>
+                <h1> 6 </h1>
+            </div>
+            <p>According to your peers this is a biased source.</p>
+            <div class="divider"></div>
+            <h2> Add your input:</h2>
+        </div>
+        <script src="popup.js"></script>
+    </body>
 </html>
